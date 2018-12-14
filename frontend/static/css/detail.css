@@ -1,0 +1,57 @@
+.jumbotron{
+    position: relative;
+    background: none;
+    display: block;
+    height: 250px;
+    padding: 0;
+}
+
+.jumbotron div{
+    float: left;
+    margin-left: 50px;
+}
+
+.jumbotron img{
+    float: left;
+    height: 250px;
+}
+.jumbotron p{
+    /*position: relative;*/
+    /*left: 50px;*/
+    /*top: 20px;*/
+    margin-top: 30px;
+    text-align: left;
+    font-size: 14px;
+}
+
+.jumbotron span{
+    /*position: absolute;*/
+    /*left: 260px;*/
+}
+
+.arr{
+    clear: both;
+    /*position: relative;*/
+    /*top: 50px;*/
+}
+
+.dropdown{
+    display: inline-block;
+    margin-right: 20px;
+}
+
+#schedule-result{
+    /*position: absolute;*/
+    /*bottom: 30px;*/
+    /*clear: both;*/
+    /*top: 100px;*/
+
+}
+
+#schedule-result table{
+    color: #333333;
+}
+
+th{
+    text-align: center;
+}

@@ -1,0 +1,25 @@
+#myCarousel{
+    width: 384px;
+    background: #333333;
+    float: left;
+}
+
+#myCarousel a{
+    /*opacity: 0;*/
+    background: #333;
+}
+
+#myCarousel img{
+    margin: auto;
+}
+
+#movie-list{
+    float: right;
+    width: 200px;
+}
+
+.list-group-item{
+    height: 32px;
+    font-size: 12px;
+    line-height: 12px;
+}

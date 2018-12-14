@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../static/favicon.ico">
+
+    <title>电影比价</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <link href="../static/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="../static/css/cover.css" rel="stylesheet">
+
+    <link href="../static/css/detail.css" rel="stylesheet">
+
+    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+    <!--[if lt IE 9]><script src="../static/js/ie8-responsive-file-warning.js"></script><![endif]-->
+    <script src="../static/js/ie-emulation-modes-warning.js"></script>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+
+<div class="site-wrapper">
+
+    <div class="site-wrapper-inner">
+
+        <div class="cover-container">
+
+            <div class="masthead clearfix" style="z-index: 1;">
+                <div class="inner">
+                    <h3 class="masthead-brand">Movie</h3>
+                    <nav>
+                        <ul class="nav masthead-nav">
+                            <li><a href="/">Home</a></li>
+                            <li class="active"><a href="#">Detail</a></li>
+                            <li><a href="#">Contact</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+
+            <div class="inner cover" style="position: relative;display: block; height: 250px;">
+                <div class="jumbotron">
+                    <img src="{{ movie.img_url }}">
+                    <div>
+                        <h3>{{ movie.name }}</h3>
+                        <p>上映时间：<span>{{ movie.release_date }}</span></p>
+                        <p>评 分：<span>{{ movie.score }}</span></p>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="arr">
+                <div class="dropdown">
+                    <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1"
+                            data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="true">
+                        选择区域
+                        <span class="caret"></span>
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenu1" id="location">
+                        <li><a href="#">荔湾区</a></li>
+                        <li><a href="#">黄浦区</a></li>
+                        <li><a href="#">天河区</a></li>
+                        <li><a href="#">白云区</a></li>
+                        <li><a href="#">越秀区</a></li>
+                        <li><a href="#">海珠区</a></li>
+                        <li><a href="#">从化区</a></li>
+                        <li><a href="#">番禺区</a></li>
+                        <li><a href="#">花都区</a></li>
+                        <li><a href="#">萝岗区</a></li>
+                        <li><a href="#">南沙区</a></li>
+                        <li><a href="#">增城区</a></li>
+                    </ul>
+                </div>
+                <div class="dropdown">
+                    <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu2"
+                            data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="true">
+                        选择电影院
+                        <span class="caret"></span>
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenu1" id="cinema">
+                    </ul>
+                </div>
+                <div class="dropdown" id="date-selector">
+                    <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu3"
+                            data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="true">
+                        今天
+                        <span class="caret"></span>
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenu1" id="date">
+                    </ul>
+                </div>
+            </div>
+
+            <div id="schedule-result">
+                <h2 align="left">糯米</h2>
+                <table class="table" id="detail1" style="background: white; margin-bottom: 20px">
+
+                </table>
+
+                <h2 align="left">时光</h2>
+                <table class="table" id="detail2" style="background: white;">
+
+                </table>
+
+            </div>
+
+            {#            <div class="mastfoot">#}
+            {#                <div class="inner">#}
+            {#                    <p>Cover template for <a href="http://getbootstrap.com">Bootstrap</a>, by <a#}
+            {#                            href="https://zhyipeng.fun">@zhyipeng</a>.</p>#}
+            {#                </div>#}
+            {#            </div>#}
+
+        </div>
+
+    </div>
+
+</div>
+
+<!-- Bootstrap core JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
+<script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+<script src="../static/js/ie10-viewport-bug-workaround.js"></script>
+<script src="../static/js/detail.js"></script>
+</body>
+</html>
